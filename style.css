@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebucket MS','Lucida Sans Unicode','Lucida Grande','Lucida Sans', Ariel,sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+main{
+    width:100%;
+    min-height: 100vh;
+}
+.top{
+    width:100%;
+    min-height: 60vh;
+    background-image: url(https://www.pickpik.com/forest-away-tree-nature-trail-landscape-67364);
+    background-size: cover;
+    background-position: center;
+}
+.top .overlay{
+    position: relative;
+    width:100%;
+    min-height: inherit;
+    background-color: rgb(3, 251, 251);
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width:100%;
+    padding:0 10vh;
+    color: beige;
+    bottom: 5%;
+}
+.text h1{
+    font-weight: 600;
+    font-size: 4vw;
+}
+.text.image{
+    background-image: url(https://unsplash.com/photos/the-sun-is-setting-over-the-mountains-in-the-desert-kZLJuw5pqH8);
+    background-size: cover;
+    background-position: center;
+    height:300px;
+    width:220px;
+}
+#rtext{
+    display: flex;
+    width:25%;
+    align-items: center;
+    justify-content: space-between;
+}
+.rtext p{
+    font-size: 12px;  
+}
+.bottom{
+    display: flex;
+    width: 100%;
+    min-height:40vh;
+}
+.b1{
+    width:30%;
+    min-height: inherit;
+    background-image: url(https://www.istockphoto.com/photo/hot-air-balloons-flying-over-the-botan-canyon-in-turkey-gm1309631741-399287202);
+    background-size: cover;
+    background-position: center;
+}
+.b1 h1{
+    text-align: center;
+    padding: 30px;
+}
+.b1 p{
+    color: rgb(245, 12, 12);
+    text-align: center;
+    padding:15px;
+}
+.b2{
+    width:30%;
+    min-height:inherit;
+    display:flex;
+    flex-direction: column;
+}
+.b2 .up{
+    width:100%;
+    min-height:20vh;
+    background-image: url(https://www.istockphoto.com/photo/dandelion-in-field-at-sunset-air-and-blowing-gm1137402783-303305720?utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Ffree-images&utm_medium=affiliate&utm_source=unsplash&utm_term=free+images%3A%3A%3A);
+    background-size: cover;
+    background-position: center;
+}
+.b2 .up h1{
+    text-align: center;
+    padding: 30px;
+}
+.b2 .up p{
+    color: rgb(236, 202, 10);
+    text-align: center;
+    padding: 15%;
+}
+.b2 .down{
+    width:100%;
+    min-height:20vh;
+    background-image: url(https://unsplash.com/photos/green-leafed-plant-GUAr9f31Jw8);
+    background-size: cover;
+    background-position: center;
+}
+.b2 .down .overlay{
+    position: relative;
+    width:100%;
+    min-height:20vh;
+    background-color: rgba(255, 255, 255, 0.091);
+}
+.b3{
+    width:40%;
+    min-height:inherit;
+    background-image: url(https://unsplash.com/photos/a-tree-that-is-sitting-on-some-rocks-DXO0TN5DJvk);
+    background-size: cover;
+    background-position: center;
+}
+.b3 .overlay{
+    justify-content: right;
+    position: relative;
+    margin-left: 50%;
+    width: 50%;
+    height:100%;
+    padding:4vw 3vh;
+}
+.b3 .overlay p{
+    padding:1.2vh;
+}
+
+@media(max-width:700px){
+    .rtext{
+        flex-direction: column;
+    }
+    .b3 .overlay{
+        width:100%;
+        margin-left: initial;
+    }
+}
+@media(max-width:500px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1{
+        font-size: 5vh;
+    }
+    .text .image{
+        height:200px;
+        width:140px;
+        margin-top: 20px;
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p{
+        margin-top: 10px;
+    }
+    .icons{
+        margin-top: 10px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width:100%;
+        min-height: 30vh;
+    }
+    .b2{
+        width:100%;
+    }
+    .b2 .up{
+        min-height:30vh ;
+    }
+    .b3{
+        width:100%;
+        min-height: 30vh;
+        background-position: left;
+    }
+}
